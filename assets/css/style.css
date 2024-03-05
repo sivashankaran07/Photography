@@ -38,7 +38,7 @@ a {
   position: relative;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .navbar {
     position: relative;
     margin-bottom: 40px;
