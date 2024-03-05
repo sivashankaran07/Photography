@@ -1,0 +1,201 @@
+<html>
+  
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  
+  
+  <style>
+  .container-ser{
+    position: absolute;
+    left: 46%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    background:#f5f5f5;
+    width: 1000px;
+    height: 600px;
+    box-shadow: 0 0px 10px #dbdbdb;
+    border-radius: 20px;
+  
+  }
+  .container-ser .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow: 0 10px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+  
+  }
+  .slide .item:nth-child(1),
+  .slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform:translate(0,0);
+    width:100%;
+    height:100%;
+  
+  }
+  .slide .item:nth-child(3){
+    left: calc(50% + 400px);
+  }
+  .slide .item:nth-child(4){
+    left: calc(50% + 620px);
+  }
+  .slide .item:nth-child(5){
+    left: calc(50% + 640px);
+    opacity: 0;
+  }
+  .slide .item:nth-child(n+6){
+    left: calc(50% + 660px);
+    opacity: 0;
+  }
+  .item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width:300px;
+    text-align: left;
+    color: #eee;
+    transform: translate(0,-50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+  }
+  .slide .item:nth-child(2) .content{
+    display: block;
+  }
+  .content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+  }
+  .content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1  forwards;
+  }
+  .content button{
+    padding: 10px 20px;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+    background-color: #dfdfdf ;
+    color: #000000;
+     border-radius: 10px;
+    
+     border: none;
+  }
+  @keyframes animate {
+    from{
+      opacity: 0;
+      transform: translate(0,100px);
+      filter: blur(33px);
+  
+    }
+    to{
+      opacity: 1;
+      transform:translate(0);
+      filter: blur(0);
+    }
+  
+  }
+  .button{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 20px;
+  }
+  .button button{
+    width: 40px;
+    height: 35px;
+    border-radius:8px;
+    border: none;
+    cursor: pointer;
+    margin: 0.5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+  }
+  .button button:hover{
+    background-color: #ababab;
+    color: #f5f5f5;
+  }
+
+  
+  </style>
+  <div class="container-ser">
+  
+      <div class="slide">
+        <div class="item" style="background-image: url(./assets/img/DD/8.jpg);">
+            <div class="content">
+              <div class="name">Day to Dusk</div>
+              <div class="des">lorem ipus color sit amet conseteu adi eliit ab emun!</div>
+              <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(./assets/img/HDR/8.jpg);">
+            <div class="content">
+              <div class="name">HDR</div>
+              <div class="des">lorem ipus color sit amet conseteu adi eliit ab emun!</div>
+              <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(./assets/img/LR/005.jpg);">
+            <div class="content">
+              <div class="name">Lawn Replacement</div>
+              <div class="des">lorem ipus color sit amet conseteu adi eliit ab emun!</div>
+              <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(./assets/img/VS/5_1.jpg);">
+            <div class="content">
+              <div class="name">Virtual staging</div>
+              <div class="des">lorem ipus color sit amet conseteu adi eliit ab emun!</div>
+              <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(./assets/img/DC/dc4.jpg);">
+            <div class="content">
+              <div class="name">Declutter</div>
+              <div class="des">lorem ipus color sit amet conseteu adi eliit ab emun!</div>
+              <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(./assets/img/g-4.jpg);">
+            <div class="content">
+              <div class="name">General</div>
+              <div class="des">lorem ipus color sit amet conseteu adi eliit ab emun!</div>
+              <button>See More</button>
+            </div>
+        </div>
+      </div>
+     <div class="button">
+      <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+     </div>
+    </div>
+
+    <script>
+      let next =document.querySelector('.next');
+      let prev =document.querySelector('.prev');
+      
+      next.addEventListener('click',function(){
+        let items =document.querySelectorAll('.item')
+        document.querySelector('.slide').appendChild(items[0])
+        
+      })
+      prev.addEventListener('click',function(){
+        let items =document.querySelectorAll('.item')
+        document.querySelector('.slide').prepend(items[items.length-1])
+
+      })
+      
+    </script>
+</html>
