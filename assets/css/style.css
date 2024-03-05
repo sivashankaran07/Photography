@@ -82,6 +82,9 @@ a {
   .card-slider{
     padding: 0!important;
   }
+  .section-title{
+    margin-top: 80px !important;
+  }
 }
 @media screen and (min-width: 1440px) {
   .wcu-section {
@@ -371,7 +374,7 @@ form .user-details .input-box input {
   background: black;
 }
 .experiences {
-  box-shadow: 0 30px 50px #505050;
+  box-shadow: 0 0px 50px #505050;
   background-color: black;
   color: #fff;
   padding: 50px;
