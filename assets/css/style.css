@@ -204,6 +204,7 @@ a {
   background-color: #868686;
   color: white;
   transform: translateY(-90%);
+  margin-top: 85px;
 }
 .hdw img {
   width: 100px;
@@ -472,6 +473,8 @@ hr {
   height: 0;
   padding-bottom: 56.25%; /* 16:9 aspect ratio (change as needed) */
   position: relative;
+  overflow: hidden;
+  margin-top: 60px;
 }
 .responsive-iframe iframe {
   position: absolute;
