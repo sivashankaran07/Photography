@@ -9,6 +9,7 @@ body {
   /* background-color: rgb(238, 238, 238);  */
   /* background-color: rgb(16 16 20 / 98%); */
   background-color: #000000;
+  overflow: hidden;
 }
 h1 {
   font-size: "Poppins", sans-serif;
